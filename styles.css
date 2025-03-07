@@ -75,7 +75,7 @@ a {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 22%;
+  width: 30%;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -90,77 +90,11 @@ a {
   margin-bottom: 10px;
 }
 
-/* Testimonials Section */
-.testimonials {
-  padding: 50px 20px;
-  text-align: center;
-  background: #fff;
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-.testimonial-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.testimonial-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  width: 45%;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-card p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.client-name {
-  font-weight: bold;
-  color: #007BFF;
-}
-
-/* Contact Section */
-.contact {
-  padding: 50px 20px;
-  text-align: center;
-  background: #f9f9f9;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-form label {
-  margin: 10px 0 5px;
-  text-align: left;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px;
-  background: #007BFF;
+/* PayPal Button */
+.paypal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #003087;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -168,8 +102,47 @@ form button {
   transition: background 0.3s ease;
 }
 
-form button:hover {
-  background: #005bb5;
+.paypal-button:hover {
+  background: #001f5e;
+}
+
+/* Stripe Payment Section */
+.payment {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.payment h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#card-element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.stripe-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6772e5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.stripe-button:hover {
+  background: #5469d4;
+}
+
+.payment-message {
+  margin-top: 20px;
+  color: #333;
 }
 
 /* Footer */
