@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: 'Sentient';
+  src: url('/assets/Sentient-Variable.woff2') format('woff2'),
+       url('/assets/Sentient-Variable.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply Custom Font */
+h1, h2, h3 {
+  font-family: 'Sentient', Arial, sans-serif;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Testimonials and Blog Posts */
+.testimonial, .blog-post {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #007BFF;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
