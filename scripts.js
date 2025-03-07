@@ -1,21 +1,16 @@
-// Language Toggle Function
-function changeLanguage(lang) {
-  if (lang === 'es') {
-    // Change content to Spanish
-    document.querySelector('h1').textContent = 'Bienvenido a Consultas Con [Your Name]';
-    document.querySelector('#about h2').textContent = 'Sobre Mí';
-    // Add more translations as needed
-  } else if (lang === 'en') {
-    // Change content to English
-    document.querySelector('h1').textContent = 'Welcome to Consultations With [Your Name]';
-    document.querySelector('#about h2').textContent = 'About Me';
-    // Add more translations as needed
-  }
-}
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 
 // Contact Form Submission
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
-  alert('Gracias por tu mensaje. Te contactaremos pronto.');
+  alert('Thank you for your message! We will contact you soon.');
   // You can add code here to send the form data to your backend or email.
 });
