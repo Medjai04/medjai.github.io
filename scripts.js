@@ -8,9 +8,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Contact Form Submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+// Stripe Payment Integration
+const stripe = Stripe('your-publishable-key'); // Replace with your Stripe key
+const elements = stripe.elements();
+const cardElement = elements.create('card');
+cardElement.mount('#card-element');
+
+const form = document.getElementById('payment-form');
+form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  alert('Thank you for your message! We will contact you soon.');
-  // You can add code here to send the form data to your backend or email.
+
+  const { error, paymentMethod } = await stripe.createPaymentMethod({
+    type: 'card',
+    card: cardElement,
+  });
+
+  if (error) {
+    document.getElementById('payment-message').textContent = error.message;
+  } else {
+    fetch('/create-payment-intent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ payment_method: paymentMethod.id }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          document.getElementById('payment-message').textContent = 'Payment successful!';
+        } else {
+          document.getElementById('payment-message').textContent = 'Payment failed. Please try again.';
+        }
+      });
+  }
 });
