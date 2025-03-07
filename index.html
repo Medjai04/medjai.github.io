@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: https://medjai.github.io; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: https://medjai.github.io; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://js.stripe.com;">
   <title>Consultas Con [Your Name]</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+  <script src="https://js.stripe.com/v3/"></script> <!-- Stripe JS -->
 </head>
 <body>
   <!-- Hero Section -->
@@ -22,50 +23,31 @@
     <h2>Our Services</h2>
     <div class="service-cards">
       <div class="service-card">
-        <h3>Business & Management</h3>
-        <p>Grow your business with expert advice on strategy, operations, and insurance.</p>
+        <h3>Business Consultation</h3>
+        <p>Get expert advice on business strategy and management.</p>
+        <!-- PayPal Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+          <input type="submit" value="Pay Now" class="paypal-button">
+        </form>
       </div>
       <div class="service-card">
-        <h3>Nutrition & Superfoods</h3>
+        <h3>Nutrition Consultation</h3>
         <p>Discover the power of nutrition and superfoods for a healthier life.</p>
       </div>
-      <div class="service-card">
-        <h3>Fitness Coaching</h3>
-        <p>Personalized fitness plans to help you achieve your health goals.</p>
-      </div>
-      <div class="service-card">
-        <h3>English Training</h3>
-        <p>Improve your English skills for business and everyday communication.</p>
-      </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial-card">
-        <p>"The business advice I received was invaluable. My company has grown significantly!"</p>
-        <p class="client-name">– Maria Gonzalez</p>
+  <!-- Stripe Payment Section -->
+  <section id="payment" class="payment">
+    <h2>Make a Payment</h2>
+    <form id="payment-form">
+      <div id="card-element">
+        <!-- Stripe Card Element will be inserted here -->
       </div>
-      <div class="testimonial-card">
-        <p>"The nutrition plan changed my life. I feel healthier and more energetic."</p>
-        <p class="client-name">– Carlos Martinez</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
+      <button id="submit-button" class="stripe-button">Pay Now</button>
+      <div id="payment-message" class="payment-message"></div>
     </form>
   </section>
 
