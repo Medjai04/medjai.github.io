@@ -8,95 +8,70 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
-  <!-- Language Toggle -->
-  <div class="language-toggle">
-    <button onclick="changeLanguage('es')">Español</button>
-    <button onclick="changeLanguage('en')">English</button>
-  </div>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#about">Sobre Mí</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#testimonials">Testimonios</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- Homepage -->
-  <section id="home">
-    <h1>Bienvenido a Consultas Con [Your Name]</h1>
-    <p>Ofrezco consultas en negocios, seguros, nutrición, fitness y más.</p>
-    <a href="#contact" class="cta-button">¡Agenda Tu Consulta Hoy!</a>
-  </section>
-
-  <!-- About Me -->
-  <section id="about">
-    <h2>Sobre Mí</h2>
-    <p>Hola, soy [Your Name]. Tengo [X años] de experiencia en [your expertise]. Mi misión es ayudarte a alcanzar tus metas.</p>
-  </section>
-
-  <!-- Services -->
-  <section id="services">
-    <h2>Servicios</h2>
-    <div class="service">
-      <h3>Consultoría de Negocios</h3>
-      <p>Ayudo a emprendedores y empresas a crecer y mejorar sus operaciones.</p>
-    </div>
-    <div class="service">
-      <h3>Nutrición y Superalimentos</h3>
-      <p>Planificación de dietas y consejos para una vida saludable.</p>
-    </div>
-    <div class="service">
-      <h3>Fitness</h3>
-      <p>Programas de entrenamiento personalizados.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Transform Your Business and Life</h1>
+      <p>Expert consultations in business, nutrition, fitness, and more. Let’s achieve your goals together.</p>
+      <a href="#services" class="cta-button">Explore Services</a>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials">
-    <h2>Testimonios</h2>
-    <div class="testimonial">
-      <p>"¡[Your Name] cambió mi vida! Gracias a su asesoría, mi negocio creció un 50%." - [Client Name]</p>
-    </div>
-    <div class="testimonial">
-      <p>"Excelente servicio y muy profesional." - [Client Name]</p>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Business & Management</h3>
+        <p>Grow your business with expert advice on strategy, operations, and insurance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Nutrition & Superfoods</h3>
+        <p>Discover the power of nutrition and superfoods for a healthier life.</p>
+      </div>
+      <div class="service-card">
+        <h3>Fitness Coaching</h3>
+        <p>Personalized fitness plans to help you achieve your health goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>English Training</h3>
+        <p>Improve your English skills for business and everyday communication.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Blog -->
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="blog-post">
-      <h3>5 Consejos para Mejorar tu Negocio</h3>
-      <p>Descubre cómo puedes optimizar tus operaciones y aumentar tus ganancias.</p>
-    </div>
-    <div class="blog-post">
-      <h3>Los Mejores Superalimentos para 2023</h3>
-      <p>Conoce los alimentos que debes incluir en tu dieta.</p>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"The business advice I received was invaluable. My company has grown significantly!"</p>
+        <p class="client-name">– Maria Gonzalez</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"The nutrition plan changed my life. I feel healthier and more energetic."</p>
+        <p class="client-name">– Carlos Martinez</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Page -->
-  <section id="contact">
-    <h2>Contacto</h2>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
     <form id="contact-form">
-      <label for="name">Nombre:</label>
+      <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-      <label for="email">Correo Electrónico:</label>
+      <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-      <label for="message">Mensaje:</label>
+      <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
-      <button type="submit">Enviar</button>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Consultas Con [Your Name]. Todos los derechos reservados.</p>
+    <p>&copy; 2023 Consultas Con [Your Name]. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script> <!-- Link to JavaScript -->
