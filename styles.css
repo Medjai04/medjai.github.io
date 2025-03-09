@@ -5,6 +5,7 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
+  background: #f0f0f0; /* Light background to make the neon effect stand out */
 }
 
 h1, h2, h3 {
@@ -111,11 +112,32 @@ a {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon Glow Effect */
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5), 0 0 20px rgba(0, 123, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
 }
 
 .service-card i {
