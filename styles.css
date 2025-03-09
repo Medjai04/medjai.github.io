@@ -66,17 +66,15 @@ a {
 }
 
 .service-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .service-card {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 30%;
-  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -85,64 +83,54 @@ a {
   transform: translateY(-10px);
 }
 
+.service-card i {
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-/* PayPal Button */
-.paypal-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #003087;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.paypal-button:hover {
-  background: #001f5e;
-}
-
-/* Stripe Payment Section */
-.payment {
+/* Testimonials Section */
+.testimonials {
   padding: 50px 20px;
   text-align: center;
   background: #fff;
 }
 
-.payment h2 {
+.testimonials h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-#card-element {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.stripe-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #6772e5;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.testimonial-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.stripe-button:hover {
-  background: #5469d4;
+.testimonial-card p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.payment-message {
-  margin-top: 20px;
-  color: #333;
+.client-name {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.rating {
+  color: #ffd700;
+  margin-top: 10px;
 }
 
 /* Footer */
