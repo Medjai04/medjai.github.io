@@ -30,6 +30,14 @@
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out 0.5s; /* Fade-in animation with 0.5s delay */
+  animation-fill-mode: both; /* Ensures the element stays visible after animation */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .hero h1 {
