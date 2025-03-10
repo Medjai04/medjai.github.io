@@ -283,12 +283,13 @@ footer {
 }
 
 .sidebar.open {
-  left: 0; /* Show sidebar */
+  left: 0; /* Show sidebar when the "open" class is added */
 }
 
 .sidebar ul {
   list-style: none;
   padding: 20px;
+  margin: 0;
 }
 
 .sidebar ul li {
