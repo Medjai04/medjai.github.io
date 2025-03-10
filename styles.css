@@ -48,7 +48,7 @@ a {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   animation: fadeIn 1.5s ease-in-out 0.5s; /* Fade-in animation with 0.5s delay */
   animation-fill-mode: both; /* Ensures the element stays visible after animation */
 }
@@ -110,7 +110,7 @@ a {
 .service-card {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -154,7 +154,7 @@ a {
 .testimonial-card {
   background: #f9f9f9;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
