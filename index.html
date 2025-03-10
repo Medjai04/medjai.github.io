@@ -4,108 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: https://medjai.github.io; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://js.stripe.com;">
-  <title>Elite Consulting</title>
+  <title>Elite consulting</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Transform Your Business and Life</h1>
-      <p>Expert consultations in business, nutrition, fitness, and more. Let’s achieve your goals together.</p>
-      <a href="#services" class="cta-button">Explore Services</a>
-    </div>
-  </section>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="close-sidebar" class="close-sidebar">&times;</button>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#subscribe">Subscribe</a></li>
+      <li><a href="business.html">Business Consultation</a></li>
+      <li><a href="nutrition.html">Nutrition Consultation</a></li>
+      <li><a href="fitness.html">Fitness Coaching</a></li>
+    </ul>
+  </div>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <i class="fas fa-briefcase fa-3x"></i>
-        <h3>Business Consultation</h3>
-        <p>Get expert advice on business strategy and management.</p>
-        <a href="business.html" class="cta-button">Learn More</a>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-apple-alt fa-3x"></i>
-        <h3>Nutrition Consultation</h3>
-        <p>Discover the power of nutrition and superfoods for a healthier life.</p>
-        <a href="nutrition.html" class="cta-button">Learn More</a>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-dumbbell fa-3x"></i>
-        <h3>Fitness Coaching</h3>
-        <p>Personalized fitness plans to help you achieve your health goals.</p>
-        <a href="fitness.html" class="cta-button">Learn More</a>
-      </div>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Sidebar Toggle Button -->
+    <button id="open-sidebar" class="open-sidebar">
+      <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+    </button>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial-card">
-        <p>"This training transformed our team's communication and productivity!"</p>
-        <p class="client-name">– John Doe, CEO</p>
-        <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Transform Your Business and Life</h1>
+        <p>Expert consultations in business, nutrition, fitness, and more. Let’s achieve your goals together.</p>
+        <a href="#services" class="cta-button">Explore Services</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <i class="fas fa-briefcase fa-3x"></i>
+          <h3>Business Consultation</h3>
+          <p>Get expert advice on business strategy and management.</p>
+          <a href="business.html" class="cta-button">Learn More</a>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-apple-alt fa-3x"></i>
+          <h3>Nutrition Consultation</h3>
+          <p>Discover the power of nutrition and superfoods for a healthier life.</p>
+          <a href="nutrition.html" class="cta-button">Learn More</a>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-dumbbell fa-3x"></i>
+          <h3>Fitness Coaching</h3>
+          <p>Personalized fitness plans to help you achieve your health goals.</p>
+          <a href="fitness.html" class="cta-button">Learn More</a>
         </div>
       </div>
-      <div class="testimonial-card">
-        <p>"A must-have for any construction company working with bilingual teams."</p>
-        <p class="client-name">– Jane Smith, Project Manager</p>
-        <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>"This training transformed our team's communication and productivity!"</p>
+          <p class="client-name">– John Doe, CEO</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"A must-have for any construction company working with bilingual teams."</p>
+          <p class="client-name">– Jane Smith, Project Manager</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Subscription Section -->
-  <section id="subscribe" class="subscribe">
-    <h2>Subscribe</h2>
-    <p>Select topics and stay current with our latest insights.</p>
-    <form class="subscription-form">
-      <input type="email" placeholder="Email address" required>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <!-- Subscription Section -->
+    <section id="subscribe" class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Select topics and stay current with our latest insights.</p>
+      <form class="subscription-form">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-links">
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookie Preferences</a></li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Terms of Use</h3>
+          <ul>
+            <li><a href="#">Local Language Information</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-column">
-        <h3>Terms of Use</h3>
-        <ul>
-          <li><a href="#">Local Language Information</a></li>
-          <li><a href="#">Accessibility Statement</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>McKinsey Insights - Get our latest thinking on your iPhone, iPad, or Android device.</p>
+        <p>&copy; 2023 Elite Consulting. All rights reserved.</p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>McKinsey Insights - Get our latest thinking on your iPhone, iPad, or Android device.</p>
-      <p>&copy; 2023 Elite Consulting. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="scripts.js"></script> <!-- Link to JavaScript -->
 </body>
