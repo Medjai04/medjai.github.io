@@ -40,6 +40,18 @@ a {
   font-weight: bold;
 }
 
+.logo a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Match the logo size */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.logo a:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
 .nav-links {
   list-style: none;
   display: flex;
