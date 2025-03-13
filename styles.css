@@ -17,6 +17,62 @@ a {
   color: #007BFF;
 }
 
+/* Top Navigation Bar */
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.sign-in, .subscribe {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sign-in:hover, .subscribe:hover {
+  color: #007BFF;
+}
+
 /* Hero Section */
 .hero {
   background: url('office-background.webp.webp') no-repeat center center/cover;
