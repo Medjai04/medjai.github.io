@@ -305,6 +305,18 @@ a {
   background: #005bb5;
 }
 
+/* Subscription Message */
+.subscription-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #007BFF;
+  text-align: center;
+}
+
+.subscription-message.error {
+  color: red; /* Error message color */
+}
+
 /* Footer */
 footer {
   background: #333;
