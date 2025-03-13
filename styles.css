@@ -43,7 +43,7 @@ a {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Increased spacing between links */
   margin: 0;
   padding: 0;
 }
@@ -51,7 +51,7 @@ a {
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem; /* Increased font size */
   transition: color 0.3s ease;
 }
 
@@ -61,18 +61,33 @@ a {
 
 .nav-actions {
   display: flex;
-  gap: 15px;
+  gap: 20px; /* Increased spacing between Sign In and Subscribe */
+  align-items: center;
 }
 
 .sign-in, .subscribe {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-size: 1.1rem; /* Increased font size */
+  padding: 8px 16px; /* Added padding for better clickability */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.sign-in:hover, .subscribe:hover {
-  color: #007BFF;
+.sign-in {
+  background: transparent; /* No background for Sign In */
+}
+
+.subscribe {
+  background: #007BFF; /* Blue background for Subscribe */
+}
+
+.sign-in:hover {
+  color: #007BFF; /* Hover effect for Sign In */
+}
+
+.subscribe:hover {
+  background: #005bb5; /* Darker blue on hover for Subscribe */
 }
 
 /* Hero Section */
