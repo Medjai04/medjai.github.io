@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Coaching</title>
+  <title>Fitness Coaching - Elite Consulting</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for Icons -->
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">Elite Consulting</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Fitness Coaching Page Content -->
@@ -24,9 +30,90 @@
     <a href="#contact" class="cta-button">Contact Us</a>
   </section>
 
+  <!-- 5 Tips Section -->
+  <section class="tips-section">
+    <h2>5 Tips to Keep Your Fitness Journey on Point</h2>
+    <div class="tips-container">
+      <div class="tip">
+        <img src="images/tip1.jpg" alt="Set Realistic Goals">
+        <h3>1. Set Realistic Goals</h3>
+        <p>Start with achievable goals to stay motivated. For example, aim to work out 3 times a week or lose 1-2 pounds per month.</p>
+      </div>
+      <div class="tip">
+        <img src="images/tip2.jpg" alt="Stay Consistent">
+        <h3>2. Stay Consistent</h3>
+        <p>Consistency is key. Even small, regular efforts lead to big results over time.</p>
+      </div>
+      <div class="tip">
+        <img src="images/tip3.jpg" alt="Mix It Up">
+        <h3>3. Mix It Up</h3>
+        <p>Vary your workouts to avoid boredom and target different muscle groups.</p>
+      </div>
+      <div class="tip">
+        <img src="images/tip4.jpg" alt="Track Your Progress">
+        <h3>4. Track Your Progress</h3>
+        <p>Keep a journal or use an app to monitor your workouts, diet, and achievements.</p>
+      </div>
+      <div class="tip">
+        <img src="images/tip5.jpg" alt="Rest and Recover">
+        <h3>5. Rest and Recover</h3>
+        <p>Your body needs time to heal. Make sure to get enough sleep and take rest days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"Elite Consulting helped me transform my fitness journey. Highly recommended!"</p>
+        <p>- Jane Doe</p>
+      </div>
+      <div class="testimonial">
+        <p>"The personalized coaching made all the difference. I’ve never felt better!"</p>
+        <p>- John Smith</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Ready to start your fitness journey? Get in touch with us today!</p>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Consultas Con [Your Name]. All rights reserved.</p>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Elite Consulting. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
